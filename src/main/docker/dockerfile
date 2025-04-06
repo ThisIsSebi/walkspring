@@ -1,0 +1,11 @@
+# Step 1: Verwende ein schlankes Java-Laufzeit-Image
+FROM openjdk:17-jdk-slim
+
+# Step 2: Erstelle ein Verzeichnis im Container
+WORKDIR /app
+
+# Step 3: Kopiere die fertige JAR-Datei in das Image
+COPY target/*.jar app.jar
+
+# Step 4: Definiere den Startbefehl
+ENTRYPOINT ["java", "-jar", "app.jar"]
