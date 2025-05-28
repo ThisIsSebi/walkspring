@@ -59,7 +59,7 @@ public class SecurityConfiguration {
                     CorsConfigurationSource source = request -> {
                         CorsConfiguration config = new CorsConfiguration();
                         config.setAllowedOrigins(
-                                List.of("http://localhost:5173"));
+                                List.of("https://orange-tree-04a9a8c03.6.azurestaticapps.net"));
                         config.setAllowedMethods(
                                 List.of("GET", "POST", "PUT", "DELETE", "PATCH"));
                         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));  // Erlaubte Header
